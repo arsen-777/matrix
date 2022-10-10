@@ -1,0 +1,67 @@
+.activeMedias {
+  position: relative;
+  & p {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
+.mediaInfo {
+  color: white;
+  .ctr {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+      font-size: 14px;
+    }
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+      & p {
+        font-size: 14px;
+      }
+    }
+    .yellow {
+      display: flex;
+      align-items: center;
+      & div {
+        width: 10px;
+        height: 10px;
+        border: 3px solid #fbcf71;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+    }
+    .blue {
+      display: flex;
+      align-items: center;
+      & div {
+        width: 10px;
+        height: 10px;
+        border: 3px solid #1f7bb6;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+    }
+    .green {
+      display: flex;
+      align-items: center;
+      & div {
+        width: 10px;
+        height: 10px;
+        border: 3px solid #1abc9c;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+    }
+    .numbers {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,150 @@
+.staticContainer {
+  width: 100%;
+  display: flex;
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+  }
+  .mediaLineContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 40% 1;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 0 10px;
+    @media (max-width: 768px) {
+      flex: 100% 1;
+    }
+    .media {
+      display: flex;
+      padding: 0 15px;
+      justify-content: space-between;
+      color: #fefefe;
+      & h3 {
+        font-size: 21px;
+      }
+      .lastWeek {
+        display: flex;
+        align-items: center;
+        & p {
+          font-size: 16px;
+        }
+        & svg {
+          width: 15px;
+          height: 15px;
+          fill: #fefefe;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  .activeMediasContainer {
+    background-color: #222222;
+    display: flex;
+    flex: 25% 1;
+    padding: 0 10px;
+    padding-top: 10px;
+    @media (max-width: 768px) {
+      align-items: center;
+      justify-content: center;
+      flex: 100% 1;
+    }
+  }
+  .geoContainer {
+    flex: 35% 1;
+    @media (max-width: 768px) {
+      flex: 100% 1;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+
+      @media (max-width: 1024px) {
+        flex-flow: wrap;
+      }
+
+      & h2 {
+        font-size: 21px;
+        padding-right: 5px;
+
+        @media (max-width: 1024px) {
+        }
+      }
+    }
+    background-color: #2a2a2a;
+
+    color: white;
+    .lastMonth {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 1024px) {
+        & p {
+          font-size: 14px;
+        }
+      }
+
+      & svg {
+        width: 15px;
+        height: 15px;
+        fill: #fefefe;
+        padding-left: 10px;
+      }
+    }
+    .mapContainer {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      .squares {
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        margin-top: 25px;
+        .one,
+        .two {
+          width: 20px;
+          height: 20px;
+          background-color: grey;
+          margin: 4px 0;
+        }
+      }
+    }
+  }
+
+  .countriesBlock {
+    .countriesTitle {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-top: 1px solid #262424;
+      padding-right: 10px;
+      @media (max-width: 1024px) {
+        & p {
+          font-size: 14px;
+        }
+      }
+      & svg {
+        width: 15px;
+        height: 15px;
+        fill: #fefefe;
+        padding-left: 10px;
+      }
+    }
+    .countries {
+      .countriesName {
+        .name {
+          display: flex;
+          justify-content: space-between;
+          border-top: 1px solid #262424;
+          padding: 0 10px;
+
+          @media (max-width: 1024px) {
+            & p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

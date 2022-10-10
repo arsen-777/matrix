@@ -1,0 +1,7 @@
+.titles {
+  display: flex;
+  border-bottom: 2px solid #d4d4d4;
+  & div:nth-child(1) {
+    border-left: none;
+  }
+}

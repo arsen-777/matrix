@@ -1,0 +1,20 @@
+.userContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 1px solid #c5c7c9;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 0 20px;
+  & p {
+    color: #636363;
+    font-size: 14px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  & svg {
+    width: 25px;
+    height: 15px;
+    fill: grey;
+  }
+}

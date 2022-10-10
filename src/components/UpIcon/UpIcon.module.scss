@@ -1,0 +1,10 @@
+.iconCont {
+  padding: 25% 30%;
+  background-color: #333232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & svg {
+    fill: #e3e3e3;
+  }
+}

@@ -1,0 +1,43 @@
+.amountBlock {
+  display: flex;
+  flex: 25% 1;
+  flex-flow: column;
+  justify-content: center;
+  // align-items: center;
+  border-left: 1px solid #c5c7c9;
+  .amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & svg {
+      width: 30px;
+      height: 50px;
+      @media (max-width: 768px) {
+        width: 20px;
+        height: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      & span {
+        font-size: 35px !important;
+      }
+    }
+  }
+  .field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    & svg {
+      width: 15px;
+      height: 15px;
+    }
+    & span {
+      padding-left: 10px;
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+    }
+  }
+}
